@@ -1,20 +1,90 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+	<!-- Banner -->	
+  <div class="header-overlay">
+    <div class="overlay morp"></div>
+  </div>
+
+  <section id="header-content">
+
+    <div class="content">
+  
+
+      <div class="d-flex justify-content-center h-100">
+          
+            
+            <div class="image_inner_container">
+              <img src="/src/assets/img/im.jpg">
+            </div>
+          
+      </div>
+      <h1>Ahmad Iswandi </h1>	
+      <a href="https://www.facebook.com"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+            <a href="https://instagram.com"><i id="social-tw" class="fa fa-instagram fa-3x social"></i></a>
+            <a href="https://github.com/iswandiahmad57"><i id="social-gp" class="fa fa-github fa-3x social"></i></a>
+            <a href="mailto:ahmad.iswamdi1703@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+      <h2 class="text-intro opacity-0">Hallo, I'm Web App Developer</h2>
+
+      <p class="text-intro opacity-0">
+        It's amazing to work with your passion, doing something you like <i style="" class="fa fa-smile-o"></i>.
+        
+        Hai, I'm Ahmad, i'm web app developer . I have many experiences in developing web application.
+        I Always learn something that will improve my skills in web development. I use technology such as php, nodejs, c#, asp.net, angular and others to make cutting edge web application. Okey Let's see what i recently have done  
+      </p>
+
+      <header class="header-menu">
+          <div class="top-menu">
+              <ul>
+
+                <li class="">
+                  <a (click)="menu('resume')">
+                    <span class="fa fa-list"></span>
+                    <span class="link">Resume</span>
+                  </a>
+                </li>
+                <li class="">
+                  <a (click)="menu('work')">
+                    <span class="fa fa-tasks"></span>
+                    <span class="link">Works</span>
+                  </a>
+                </li>
+                <!-- <li class="">
+                  <a>
+                    <span class="fa fa-tasks"></span>
+                    <span class="link">Fun Projects</span>
+                  </a>
+                </li>
+
+                <li class="">
+                  <a>
+                    <span class="fa fa-comments"></span>
+                    <span class="link">Blog</span>
+                  </a>
+                </li> -->
+              </ul>
+            </div>
+      </header>
+
+      <!-- <a href="#" id="open-more-info" data-target="main-content" class="text-intro opacity-0 btn btn-primary ">READ MORE &rarr;</a> -->
+    
+
+
+
+    </div>
+
+
+  </section>
+  <!-- Banner -->	
+
+
+  <!-- Main Content -->
+  <section id="main-content" class="main-hide">
+    <app-work-job *ngIf="workMenu"></app-work-job>
+    <app-resume-work *ngIf="resumeMenu"></app-resume-work>
+
+
+
+  </section>
+
+
+
+ 
 

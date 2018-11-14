@@ -23,9 +23,20 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/assets/css/style.css"
             ],
-            "scripts": []
+
+            "scripts": [
+              
+            "src/assets/js/jquery.min.js",
+            "src/assets/js/jquery.easings.min.js",
+            "src/assets/js/bootstrap.min.js",
+            "src/assets/js/velocity.min.js",
+            "src/assets/js/vegas.js",
+            "src/assets/js/jquery.mousewheel.js",
+            "src/assets/js/jquery.mCustomScrollbar.js",
+            "src/assets/js/custom.js"
+            ]
           },
           "configurations": {
             "production": {
